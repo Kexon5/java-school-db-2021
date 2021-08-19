@@ -20,7 +20,7 @@ public class ColorFrame extends JFrame {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println(counterInner.Increase());
+                System.out.println(counterInner.increase());
 
             }
         });
@@ -34,7 +34,7 @@ public class ColorFrame extends JFrame {
     class Counter {
         private int counter;
 
-        public int Increase() {
+        public int increase() {
             return counter++;
         }
     }
